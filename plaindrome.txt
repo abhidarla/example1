@@ -1,0 +1,13 @@
+def is_palindrome(text):
+    reversed_text = text[::-1]
+    if text == reversed_text:
+        return True
+    else:
+        return False
+
+# Example usage
+input_string = input("Enter a string: ")
+if is_palindrome(input_string):
+    print(f"'{input_string}' is a palindrome!")
+else:
+    print(f"'{input_string}' is not a palindrome.")
